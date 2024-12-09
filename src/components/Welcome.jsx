@@ -1,15 +1,15 @@
-import banner1 from '../assets/images/ArogyaBanner.jpg'
-import banner2 from '../assets/images/ArogyaBanner.jpg'
+import banner1 from '../assets/images/ArogyaBanner.jpg';
+import banner2 from '../assets/images/ArogyaBanner.jpg';
 
 const WelcomePage = () => {
     return (
         <div className="flex flex-col min-h-screen">
             {/* Header Section */}
-            <header className="bg-green-900 text-white py-6">
+            <header className="bg-green-900 text-white py-6 px-4">
                 <div className="container mx-auto text-center">
-                    <h1 className="text-4xl font-bold">Welcome to Arogya Abhilashi</h1>
-                    <p className="text-sm mt-2">
-                        Your trusted destination for premium organic products!
+                    <h1 className="text-3xl sm:text-4xl font-bold">Welcome to Arogya Abhilashi</h1>
+                    <p className="text-sm sm:text-base mt-2">
+                        Your trusted source for premium organic products cultivated through sustainable, bull-driven farming practices.
                     </p>
                 </div>
             </header>
@@ -20,17 +20,17 @@ const WelcomePage = () => {
                     {/* Banner Image */}
                     <img
                         src={banner1}
-                        alt="Banner"
-                        className="w-full h-[500px] object-cover"
+                        alt="Fresh Organic Products"
+                        className="w-full h-[350px] sm:h-[500px] object-cover"
                     />
                     {/* Overlay */}
-                    <div className="absolute inset-0 bg-green-900 bg-opacity-50 flex items-center justify-center">
+                    <div className="absolute inset-0 bg-green-900 bg-opacity-50 flex items-center justify-center px-4">
                         <div className="text-center text-white px-4">
-                            <h2 className="text-3xl sm:text-5xl font-bold">
-                                Fresh Organic Products Just for You!
+                            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold">
+                                Organic Bull-Driven Products for Your Health and Sustainability!
                             </h2>
-                            <p className="mt-3 text-lg">
-                                Explore a wide variety of organic products for a healthier life.
+                            <p className="mt-3 text-base sm:text-lg">
+                                Experience the authentic taste and unmatched quality of products grown with the care and strength of bull-driven agriculture.
                             </p>
                             <button
                                 onClick={() => alert("Learn More Coming Soon!")}
@@ -52,26 +52,86 @@ const WelcomePage = () => {
                         <div className="relative mt-4">
                             <img
                                 src={banner2}
-                                alt="Welcome Banner"
-                                className="w-full h-[500px] object-cover"
+                                alt="Organic Living"
+                                className="w-full h-[350px] sm:h-[500px] object-cover"
                             />
                             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-6">
-                                <h2 className="text-4xl font-bold">Organic Products for a Better Tomorrow</h2>
-                                <p className="mt-3 text-lg">
-                                    Embrace a healthier lifestyle with our curated selection of organic goods.
+                                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center">Bull-Driven Farming: A Tradition of Quality and Sustainability</h2>
+                                <p className="mt-3 text-sm sm:text-lg text-center">
+                                    At Arogya Abhilashi, we take pride in our bull-driven organic farming practices. Our products are cultivated using natural, animal-powered methods that restore soil health, promote sustainability, and yield exceptional crops.
                                 </p>
                             </div>
                         </div>
 
+                        {/* About Section */}
+                        <section className="p-4">
+                            <h3 className="text-2xl sm:text-3xl font-semibold text-gray-800 text-center">
+                                Why Bull-Driven Products?
+                            </h3>
+                            <p className="text-center text-gray-600 mt-4 max-w-3xl mx-auto">
+                                Bull-driven farming is a traditional, yet highly effective agricultural technique. By integrating bull power into the cultivation process, we reduce the need for mechanical equipment, minimizing carbon footprints while promoting biodiversity and soil health.
+                            </p>
+                            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <div className="bg-white p-4 rounded-lg shadow-lg text-center">
+                                    <h4 className="text-xl sm:text-2xl font-semibold text-green-800">Sustainable Farming</h4>
+                                    <p className="text-gray-600 mt-4">
+                                        Our bull-powered farming techniques ensure that no harmful chemicals or machines are used, promoting healthier soil and a better environment for future generations.
+                                    </p>
+                                </div>
+                                <div className="bg-white p-4 rounded-lg shadow-lg text-center">
+                                    <h4 className="text-xl sm:text-2xl font-semibold text-green-800">High-Quality Produce</h4>
+                                    <p className="text-gray-600 mt-4">
+                                        Bull-driven agriculture has been proven to yield crops that are more nutrient-dense and free of the harmful side effects often associated with modern mechanized farming.
+                                    </p>
+                                </div>
+                                <div className="bg-white p-4 rounded-lg shadow-lg text-center">
+                                    <h4 className="text-xl sm:text-2xl font-semibold text-green-800">Animal Welfare</h4>
+                                    <p className="text-gray-600 mt-4">
+                                        Our bulls are well-cared-for and treated with the utmost respect. We believe in animal welfare as a core principle, integrating them into the farming process in a way that supports both the land and the animals.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+
+                        {/* Product Spotlight Section */}
+                        <section className="bg-gradient-to-b from-green-100 via-green-200 to-green-300 p-4">
+                            <h3 className="text-2xl sm:text-3xl font-semibold text-gray-800 text-center">
+                                Featured Bull-Driven Organic Products
+                            </h3>
+                            <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                                <div className="bg-white p-4 rounded-lg shadow-lg text-center">
+                                    <img src={banner1} alt="Product 1" className="w-full h-40 object-cover rounded-lg" />
+                                    <h4 className="text-xl font-semibold text-gray-700 mt-4">Organic Rice</h4>
+                                    <p className="text-gray-600 mt-2">
+                                        Grown using bull-driven plowing, this rice is free from pesticides and preservatives, ensuring a pure and healthy meal for your family.
+                                    </p>
+                                </div>
+                                <div className="bg-white p-4 rounded-lg shadow-lg text-center">
+                                    <img src={banner1} alt="Product 2" className="w-full h-40 object-cover rounded-lg" />
+                                    <h4 className="text-xl font-semibold text-gray-700 mt-4">Organic Ghee</h4>
+                                    <p className="text-gray-600 mt-2">
+                                        Our organic ghee is made from milk sourced from cows raised with love and care. A traditional method of preparation ensures rich flavor and purity.
+                                    </p>
+                                </div>
+                                <div className="bg-white p-4 rounded-lg shadow-lg text-center">
+                                    <img src={banner1} alt="Product 3" className="w-full h-40 object-cover rounded-lg" />
+                                    <h4 className="text-xl font-semibold text-gray-700 mt-4">Fresh Vegetables</h4>
+                                    <p className="text-gray-600 mt-2">
+                                        Naturally grown in bull-powered fields, our vegetables are packed with nutrients and free from harmful chemicals, ensuring you enjoy the best of nature.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+
                         {/* Contact Details Section */}
                         <div className="p-8">
-                            <h3 className="text-3xl font-semibold text-gray-800 text-center">
+                            <h3 className="text-2xl sm:text-3xl font-semibold text-gray-800 text-center">
                                 Contact Us
                             </h3>
                             <p className="text-center text-gray-600 mt-2">
-                                Have any questions or want to place an order? Reach out to us.
+                                Have any questions or want to place an order? Our team is ready to assist you with all your needs.
                             </p>
-                            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                                 <div className="flex flex-col items-center">
                                     <div className="bg-green-100 p-4 rounded-full">
                                         <svg
@@ -162,18 +222,18 @@ const WelcomePage = () => {
                                     <h4 className="text-xl font-semibold text-gray-700 mt-3">
                                         Location
                                     </h4>
-                                    <p className="text-gray-600">Hyderabad, Himayathnagar, Telangana, 560064</p>
+                                    <p className="text-gray-600 text-center">Hyderabad, Himayathnagar, Telangana, 560064</p>
                                 </div>
                             </div>
                         </div>
 
                         {/* Call-to-Action Section */}
                         <div className="bg-gradient-to-r from-green-700 via-green-600 to-green-500 p-8 text-center">
-                            <h3 className="text-2xl font-bold text-white">
+                            <h3 className="text-2xl sm:text-3xl font-bold text-white">
                                 Need Immediate Assistance?
                             </h3>
                             <p className="mt-4 text-green-200">
-                                Reach out to us for any queries or product information.
+                                Our dedicated support team is here to assist you with any product queries, orders, or concerns.
                             </p>
                             <button
                                 onClick={() => alert("We’ll get back to you soon!")}
